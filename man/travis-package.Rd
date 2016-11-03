@@ -4,7 +4,7 @@
 \name{travis-package}
 \alias{travis}
 \alias{travis-package}
-\title{Tools for travis push stuff}
+\title{travis: Tools for travis push stuff}
 \description{
 More about what it does (maybe more than one line). Stuff!
 }
@@ -15,5 +15,15 @@ function queries basic information on your repository.
 The \code{\link{travis_set_var}} and \code{\link{github_add_key}} functions
 interact with the GitHub and Travis configuration of your repository,
 and ask for permission the first time you call them.
+}
+\author{
+\strong{Maintainer}: Mika Braginsky \email{mika.br@gmail.com}
+
+Authors:
+\itemize{
+  \item Karthik Ram \email{karthik.ram@gmail.com}
+  \item Jeroen Ooms \email{jeroen.ooms@stat.ucla.edu}
+}
+
 }
 
