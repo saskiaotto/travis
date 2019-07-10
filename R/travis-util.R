@@ -38,5 +38,5 @@ travis_sync <- function(block = TRUE, token = travis_token(), quiet = FALSE) {
 #' @export
 #' @rdname travis_sync
 travis_browse <- function(repo = github_repo()) {
-  utils::browseURL(paste0("https://travis-ci.org/", repo))
+  utils::browseURL(paste0("https://travis-ci.com/", repo))
 }
