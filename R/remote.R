@@ -22,6 +22,11 @@ extract_repo <- function(url) {
   } else if (grepl("^https://(.+@)github.com", url)) {
     url <- sub("^https://(.+@)github.com", "https://github.com", url)
   }
+  # if github.com is replaced with alias in ssh config file:
+  else if (grepl("^git@(.+):", url)) {
+    url <- sub("^git@(.+):", "https://github.com/", url)
+  }
+
   if (!all(grepl("^https://github.com", url))) {
     stopc("Unrecognized repo format: ", url)
   }
